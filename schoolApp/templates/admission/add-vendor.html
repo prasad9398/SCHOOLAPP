@@ -1,0 +1,28 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Adding Vendor page</title>
+  <link rel="stylesheet" href="{% static "stylesheets/style.css" %}" />
+</head>
+<body>
+  <h1>Hello, Welcome to add Vendor page</h1>
+
+  <img src="{% static "images/STK-20240828-WA0008.webp" %}" alt ="Image not Found"/>
+
+<h3>please fill below application form</h3><br/><br/>
+
+<form method="POST">
+  <table>
+    {{form.as_table}}
+  </table>
+
+  <br/>
+  <input type="submit" value="Add Vendor">
+
+  {% csrf_token %}
+</form>
+
+</body>
+</html>

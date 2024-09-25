@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method="post">
+      Are you sure to delete this reacher?
+    </br>
+      <button type="submit" name="Confirm">Confrm</button>
+
+    {% csrf_token %}
+
+    </form>
+
+<br/>
+<a href="/ad/teacherslist">  <button type="button" value="Cancel">Cancel</button></a>
+
+  </body>
+</html>

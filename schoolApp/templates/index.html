@@ -1,0 +1,45 @@
+{% load static %}
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>homepage</title>
+<link rel="stylesheet" href="{% static "stylesheets/style.css" %}" />
+</head>
+
+<body>
+  <br/>
+<h2>
+<img src="{% static "images/STK-20240828-WA0008.webp" %}" width="100" height="100" alt="Image Not Found"/>
+Prasad Edits
+<h2/>
+<br/>
+<br/>
+<hr/>
+<br/>
+<br/>
+<div class="module">
+<h1>admission</h1><br/>
+<a href="/ad/newadm"><button type="button" name="button">Add Admission</button></a><br/><br/>
+<a href="/ad/admreport"><button type="button" name="button">Admission Report</button></a><br/><br/>
+</div>
+
+<div class="module">
+<h1>Finance</h1><br/>
+<a href="/fin/feecoll"><button type="button" name="button">Fee Collection</button></a><br/><br/>
+<a href="/fin/collectionreport"><button type="button" name="button">Fee Collection Report</button></a><br/><br/>
+<a href="/fin/duesreport"><button type="button" name="button">Fee Dues Report</button></a><br/><br/>
+</div>
+
+<br/><br/>
+
+<a href="/accounts/logout">Logout</a>
+
+<br/><br/>
+
+{{name}}<br/>
+{{address}}<br/>
+{{contact}}<br/>
+{{item}}<br/>
+
+</body>
+</html>
